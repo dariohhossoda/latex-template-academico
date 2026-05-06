@@ -1,0 +1,57 @@
+% !TeX root = main.tex
+\makeatletter
+\begin{titlepage}
+	\thispagestyle{empty}
+	\centering
+	\singlespacing%
+	\MakeUppercase{\@author}
+
+	\vspace{9cm}
+
+	\textbf{\@title}
+
+
+	\vfill
+
+	\local \\
+	\the\year%
+	\newpage
+
+	\thispagestyle{empty}
+	\centering
+	\singlespacing%
+	\MakeUppercase{\@author}
+
+	\vspace{9cm}
+
+	\textbf{\@title}
+
+	\vfill
+	\textbf{\versao}
+
+	\vspace*{5\baselineskip}
+
+
+	\begin{changemargin}{.5\textwidth}{0cm}
+		\singlespacing%
+
+		\begin{justify}
+			\proposito
+		\end{justify}
+
+		\vspace*{1\baselineskip}
+
+		\extrainfo
+
+		\vspace*{1\baselineskip}
+		\raggedright
+		Orientador: \supervisor%
+	\end{changemargin}
+	\vfill
+	\centering
+	\local \\
+	\the\year
+
+\end{titlepage}
+\restoregeometry
+\makeatother
