@@ -1,0 +1,118 @@
+% !TeX root = main.tex
+\documentclass[a4paper, 12pt, titlepage]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfiles}
+\usepackage{hyphenat}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{changepage}
+\usepackage{textpos}
+\usepackage{microtype}
+\usepackage{pdflscape}
+\usepackage[percent]{overpic}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{lipsum}
+
+% TODO: Adicionar configuração para glossário, caso necessário
+% \usepackage[symbols,nogroupskip,sort=none, toc]{glossaries-extra}
+% \input{symbols}
+
+\usepackage[alf,
+	abnt-emphasize=bf,
+	abnt-etal-cite=3,
+	abnt-etal-list=3,
+	abnt-etal-text=it,
+	abnt-and-type=e,
+	abnt-repeated-author-omit=yes
+]{abntex2cite}
+
+\usepackage{indentfirst}
+
+\usepackage[left=3cm,
+			right=2cm,
+			top=3cm,
+			bottom=2cm,
+			footskip=0.5cm,
+			includefoot,
+			%showframe
+			]{geometry}
+
+\usepackage{setspace}
+\setstretch{1.5}
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\setlength{\abovecaptionskip}{5pt}
+
+\newenvironment{changemargin}[2]{%
+	\begin{list}{}{%
+		\setlength{\topsep}{0pt}%
+		\setlength{\leftmargin}{#1}%
+		\setlength{\rightmargin}{#2}%
+		\setlength{\listparindent}{\parindent}%
+		\setlength{\itemindent}{\parindent}%
+		\setlength{\parsep}{\parskip}%
+		}%
+	\item[]}{\end{list}
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage}
+\setlength{\footskip}{15pt}
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% \renewcommand\glossarysection[2][]{\section*{#1}}
+\newcommand{\source}[1]{\caption*{Fonte: {#1}} }
+
+\captionsetup{
+	figureposition=bottom,
+	font=footnotesize,
+	singlelinecheck=false,
+	justification=centering
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Editar as informações abaixo   %
+% para personalizar o PDF gerado %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+	pdfauthor={Nome do Autor},
+	pdftitle={Título do Trabalho},
+	pdfsubject={Assunto do Trabalho},
+	pdfkeywords={Palavras-chave, do, trabalho},
+}
+
+\author{Nome do Autor}
+\title{Título do Trabalho}
+\date{\today}
+% TODO: Incorporar as informações abaixo no cover.tex
+% TODO: Mover para arquivo de configuração separado
+\newcommand{\supervisor}{Nome do Orientador}
+\newcommand{\versao}{Versão Original} % Tipo de Versão: Original/Corrigida
+\newcommand{\instituicao}{Instituição de Ensino}
+\newcommand{\proposito}{Dissertação apresentada à {\instituicao{}} para obtenção do título de mestre em ciências} %Tipo: Dissertação/Tese/Monografia/Trabalho de Conclusão de Curso
+\newcommand{\extrainfo}{Área de Concentração: Engenharia \\ Hidráulica e Ambiental} % Área de Concentração
+\newcommand{\local}{Cidade}

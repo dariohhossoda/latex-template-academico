@@ -1,0 +1,55 @@
+% !TeX root = main.tex
+\input{preamble}
+\begin{document}
+\pagenumbering{arabic}
+    \include{sections/cover}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Informações Adicionais %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%
+    % \includepdf[]{sections/FichaCatalografica.pdf}
+    % \newpage
+    % \input{sections/FolhaDeAprovacao}
+    % \clearpage
+
+    \input{sections/acknowledgments}
+    \newpage
+    \include{sections/abstract}
+    \singlespacing
+    \tableofcontents
+    \newpage
+    \listoffigures
+    \newpage
+    \listoftables
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lista de Siglas e Símbolos %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % \newpage
+    % \printunsrtglossary[type=symbols, style=long, title={Lista de Símbolos}]
+
+    \onehalfspacing
+    \clearpage
+
+    %%%%%%%%%%%%%%%%%%%%%%
+    % Conteúdo Principal %
+    %%%%%%%%%%%%%%%%%%%%%%
+
+    \input{sections/introduction}
+    \input{sections/objectives}
+    \input{sections/literature_review}
+    \input{sections/methodology}
+    \input{sections/results}
+    \input{sections/conclusions}
+    \newpage
+    \addcontentsline{toc}{section}{Referências}
+    \bibliography{refs}
+
+    %%%%%%%%%%
+    % Anexos %
+    %%%%%%%%%%
+    % \newpage
+    % \input{sections/anexoA}
+    % \newpage
+    % \input{sections/anexoB}
+\end{document}
