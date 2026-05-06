@@ -26,3 +26,4 @@
 *.xdv
 _minted-*/
 latexmkrc
+*.pdf
