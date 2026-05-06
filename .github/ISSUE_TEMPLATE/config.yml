@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentação
+    url: https://github.com/latex-template-academico/docs
+    about: Consulte a documentação completa
+  - name: Discussões
+    url: https://github.com/latex-template-academico/discussions
+    about: Faça perguntas e compartilhe ideias
