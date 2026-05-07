@@ -8,6 +8,7 @@ O arquivo principal é `main.tex`, que inclui os capítulos e seções do docume
 ```
 main.tex
 preamble.tex
+config.tex
 refs.bib
 sections/
     cover.tex
@@ -30,7 +31,9 @@ LaTeX é um sistema de preparação de documentos de alta qualidade, amplamente 
 1. Clone este repositório para o seu ambiente local.
 2. Abra o arquivo `main.tex` em um editor de LaTeX de sua escolha (como Overleaf, TeXstudio, etc.).
 3. Edite o conteúdo dos capítulos e seções conforme necessário, seguindo a estrutura do template.
-4. Compile o documento `main.tex` para gerar o PDF final.
+4. Edite o arquivo `config.tex` para personalizar as configurações do documento, como nomes, títulos, etc.
+5. Adicione suas referências bibliográficas no arquivo `refs.bib` utilizando o formato BibTeX.
+6. Compile o documento `main.tex` para gerar o PDF final.
 
 
 ### Ambientes de escrita LaTeX
