@@ -1,19 +1,22 @@
+% !TeX root = main.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Editar as informações abaixo   %
 % para personalizar o PDF gerado %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\author{Nome do Autor}
+\title{Título do Trabalho}
+\date{\today} % Substituir \today por data específica, se necessário
+
+\makeatletter
 \hypersetup{
-	pdfauthor={Nome do Autor},
-	pdftitle={Título do Trabalho},
+	pdfauthor={\@author},
+	pdftitle={\@title},
 	pdfsubject={Assunto do Trabalho},
 	pdfkeywords={Palavras-chave, do, trabalho},
 }
+\makeatother
 
-\author{Nome do Autor}
-\title{Título do Trabalho}
-\date{\today}
-% TODO: Incorporar as informações abaixo no cover.tex
 \newcommand{\supervisor}{Nome do Orientador}
 \newcommand{\versao}{Versão Original} % Tipo de Versão: Original/Corrigida
 \newcommand{\instituicao}{Instituição de Ensino}

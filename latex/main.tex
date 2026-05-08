@@ -11,15 +11,21 @@
     % \newpage
     % \input{sections/FolhaDeAprovacao}
     % \clearpage
-
-    \input{sections/acknowledgments}
-    \newpage
+    \include{sections/dedication}
+    \include{sections/acknowledgments}
+    \include{sections/epigraph}
     \include{sections/abstract}
-    \singlespacing
+    \singlespacing%
+
+    % Lista de Figuras, Tabelas e Siglas
+    % Remover se não for necessário
+    \thispagestyle{empty}
     \tableofcontents
     \newpage
+    \thispagestyle{empty}
     \listoffigures
     \newpage
+    \thispagestyle{empty}
     \listoftables
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,7 +34,7 @@
     % \newpage
     % \printunsrtglossary[type=symbols, style=long, title={Lista de Símbolos}]
 
-    \onehalfspacing
+    \onehalfspacing%
     \clearpage
 
     %%%%%%%%%%%%%%%%%%%%%%
@@ -43,7 +49,7 @@
     \input{sections/conclusions}
     \newpage
     \addcontentsline{toc}{section}{Referências}
-    \bibliography{refs}
+    \printbibliography%
 
     %%%%%%%%%%
     % Anexos %
